@@ -4,7 +4,7 @@ import sys
 
 def operation():
     try:
-        option, args = getopt.getopt(sys.argv[1:], ":p", ["project"])
+        option, args = getopt.getopt(sys.argv[1:], "p:", ["project="])
     except getopt.GetoptError as e:
         print("not support the arg:" + str(e))
         exit(0)
