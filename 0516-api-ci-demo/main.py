@@ -9,7 +9,7 @@ def run():
     if project_name is None:
         print("project_name can not be None")
         exit(-1)
-    start_command = [project_name]
+    start_command = [project_name, "--capture=no"]
     pytest.main(start_command)
 
 
